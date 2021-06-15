@@ -13,6 +13,7 @@ import (
 	"strconv"
 
 	ico "github.com/biessek/golang-ico"
+	"github.com/caelifer/gotests/signal/dispatch"
 	"github.com/mazznoer/colorgrad"
 	"github.com/ojrac/opensimplex-go"
 )
@@ -40,6 +41,11 @@ var (
 )
 
 func main() {
+	// Handle SIGINT by clean exit
+	dispatch.HandleSignal(os.Interrupt, func(os.Signal) {
+		os.Exit(0)
+	})
+
 	httpPort, ok := os.LookupEnv(EnvHTTPPortVar)
 	if !ok {
 		httpPort = DefaultHTTPPort
