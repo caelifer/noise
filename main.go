@@ -43,6 +43,7 @@ var (
 func main() {
 	// Handle SIGINT by clean exit
 	dispatch.HandleSignal(os.Interrupt, func(os.Signal) {
+		fmt.Fprintf(os.Stderr, "\n")
 		os.Exit(0)
 	})
 

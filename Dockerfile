@@ -7,7 +7,7 @@ FROM golang:latest as builder
 LABEL maintainer="Timour Ezeev <timour.ezeev@me.com>"
 
 # Switch to Workspace directory in the builder
-WORKDIR /app
+WORKDIR /build
 
 # Copy content of current directory to workspace in the container
 COPY . .
@@ -32,7 +32,7 @@ RUN apk --no-cache add ca-certificates
 
 # Copy prebuild binary to the application folder
 WORKDIR /app
-COPY --from=builder /app/noise .
+COPY --from=builder /build/noise .
 
 # Expose ports
 EXPOSE 8080
