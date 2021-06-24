@@ -34,6 +34,11 @@ RUN apk --no-cache add ca-certificates
 WORKDIR /app
 COPY --from=builder /build/noise .
 
+# Add non-priveleged user to run our app
+RUN adduser appuser -D -H
+RUN chown -R appuser /app
+USER appuser
+
 # Expose ports
 EXPOSE 8080
 
