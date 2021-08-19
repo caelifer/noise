@@ -1,7 +1,7 @@
 github.com/biessek/golang-ico v0.0.0-20180326222316-d348d9ea4670 h1:FQPKKjDhzG0T4ew6dm6MGrXb4PRAi8ZmTuYuxcF62BM=
 github.com/biessek/golang-ico v0.0.0-20180326222316-d348d9ea4670/go.mod h1:iRWAFbKXMMkVQyxZ1PfGlkBr1TjATx1zy2MRprV7A3Q=
-github.com/caelifer/gotests v0.0.0-20200905001917-b2a0e26153fc h1:Md1q5v4cBT8Y6MbzMa8glfG6MtDhoKvEZIQFsC0Hgc8=
-github.com/caelifer/gotests v0.0.0-20200905001917-b2a0e26153fc/go.mod h1:6Ikw6J2xtn/cC3YmLjnBAqv6wRCL1bIKhitfaMs3kL4=
+github.com/caelifer/gotests/signal v0.0.0-20210819134920-e727b40a2543 h1:D5CnQg7s7Dvu+OVlR/xLOef5tgNQE0zod6eqdcvL0qI=
+github.com/caelifer/gotests/signal v0.0.0-20210819134920-e727b40a2543/go.mod h1:kiWbAxJWVgbKl/zE0YXq6qPXsQ3aMOyg2gw4GihmuYM=
 github.com/jsummers/gobmp v0.0.0-20151104160322-e2ba15ffa76e h1:LvL4XsI70QxOGHed6yhQtAU34Kx3Qq2wwBzGFKY8zKk=
 github.com/jsummers/gobmp v0.0.0-20151104160322-e2ba15ffa76e/go.mod h1:kLgvv7o6UM+0QSf0QjAse3wReFDsb9qbZJdfexWlrQw=
 github.com/lucasb-eyer/go-colorful v1.0.3/go.mod h1:R4dSotOR9KMtayYi1e77YzuveK+i7ruzyGqttikkLy0=

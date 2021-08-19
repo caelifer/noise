@@ -1,7 +1,7 @@
 # github.com/biessek/golang-ico v0.0.0-20180326222316-d348d9ea4670
 ## explicit
 github.com/biessek/golang-ico
-# github.com/caelifer/gotests v0.0.0-20200905001917-b2a0e26153fc
+# github.com/caelifer/gotests/signal v0.0.0-20210819134920-e727b40a2543
 ## explicit
 github.com/caelifer/gotests/signal/dispatch
 # github.com/jsummers/gobmp v0.0.0-20151104160322-e2ba15ffa76e

@@ -46,9 +46,6 @@ func HandleSignal(sig os.Signal, handler SignalHandler) {
 	dispatcher.Unlock()
 	/////////////////////// protected section ///////////////////
 
-	// Set notification
-	signal.Notify(ch, sig)
-
 	// Install custom handler in the separate gorutine
 	go func(c <-chan os.Signal, sig os.Signal) {
 		for s := range c {
@@ -56,6 +53,9 @@ func HandleSignal(sig os.Signal, handler SignalHandler) {
 		}
 		log.Printf("exiting [%s] handler", sig)
 	}(ch, sig)
+
+	// Set notification
+	signal.Notify(ch, sig)
 }
 
 // StopHandleSignal safely stops signal handling for signal specified by signal.
