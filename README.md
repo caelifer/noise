@@ -1,2 +1,2 @@
 # noise
-Display colorful web page with randomly generated nose
+Display colorful web page with randomly generated noise
