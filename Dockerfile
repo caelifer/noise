@@ -28,7 +28,7 @@ FROM alpine:latest
 # If proxy required for connecting to the Internet, set these:
 # ARG https_proxy=http://http-proxy:port
 # ARG http_proxy=http://http-proxy:port
-RUN apk --no-cache add ca-certificates
+RUN apk --no-cache add ca-certificates tzdata
 
 # Copy prebuild binary to the application folder
 WORKDIR /app

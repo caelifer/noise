@@ -19,7 +19,7 @@ local: *.go
 	CGO_ENABLED=0 $(GOCMD) build -a -installsuffix cgo .
 
 run:
-	$(DOCKER) run -it -e DEBUG=$(DEBUG) -p $(EXPOSED_PORTS) $(IMAGE):$(IMAGE_VERSION)
+	$(DOCKER) run -it --rm -e DEBUG=$(DEBUG) -p $(EXPOSED_PORTS) $(IMAGE):$(IMAGE_VERSION)
 
 clean:
 	rm -f $(TARGET_APP)
