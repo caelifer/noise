@@ -1,6 +1,6 @@
 TARGET_APP = noise
 DOCKER = docker
-IMAGE = timour/$(TARGET_APP)
+IMAGE = $(USER)/$(TARGET_APP)
 IMAGE_VERSION = latest
 EXPOSED_PORTS = 8080:8080
 GOCMD = go
